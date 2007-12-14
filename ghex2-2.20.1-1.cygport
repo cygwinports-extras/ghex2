@@ -1,0 +1,6 @@
+ORIG_PN=ghex
+
+inherit gnome2
+
+DESCRIPTION="GNOME hex editor"
+HOMEPAGE="http://pluton.ijs.si/~jaka/gnome.html"
