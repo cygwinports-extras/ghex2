@@ -1,5 +1,0 @@
-category: Gnome Editors
-requires: cygwin GConf2 atk glib2 gnome-vfs2 gtk2-x11 libbonobo2 libbonoboui2 libgailutil18 libgnome2 libgnomeprint22 libgnomeprintui22 libgnomeui2 libintl8 libpopt0 pango
-sdesc: "GNOME Hexadecimal editor"
-ldesc: "GHex allows the user to load data from any file,
-view and edit it in either hex or ascii."

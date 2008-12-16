@@ -1,0 +1,13 @@
+ORIG_PN=ghex
+
+inherit gnome2
+
+DESCRIPTION="GNOME hex editor"
+HOMEPAGE="http://pluton.ijs.si/~jaka/gnome.html"
+
+PATCH_URI="2.22-no-undefined.patch"
+
+PKG_NAMES="${PN} libgtkhex0 libgtkhex-devel"
+ghex2_CONTENTS="etc/ usr/bin/ghex2.exe usr/share/"
+libgtkhex0_CONTENTS="usr/bin/cyggtkhex-0.dll"
+libgtkhex_devel_CONTENTS="usr/include/ usr/lib/"

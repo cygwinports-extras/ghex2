@@ -4,38 +4,37 @@ GHex allows the user to load data from any file,
 view and edit it in either hex or ascii.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  GConf2-2.20.1-1
-  atk-1.20.0-1
-  glib2-2.14.4-1
-  gnome-vfs2-2.20.1-1
-  gtk2-x11-2.12.2-1
-  libbonobo2-2.20.1-1
-  libbonoboui2-2.20.0-1
-  libgailutil18-1.20.2-1
-  libgnome2-2.20.1.1-1
-  libgnomeprint22-2.18.2-1
-  libgnomeprintui22-2.18.1-1
-  libgnomeui2-2.20.1.1-1
-  libintl8-0.15-1
-  libpopt0-1.12-1
-  pango-1.18.3-1
+  cygwin-1.5.25-15
+  libatk1.0_0-1.24.0-1
+  libbonobo2_0-2.24.0-1
+  libbonoboui2_0-2.24.0-1
+  libgailutil18-2.14.5-1
+  libgconf2_4-2.24.0-1
+  libglib2.0_0-2.18.3-1
+  libgnome2_0-2.24.1-1
+  libgnomeprint2.2_0-2.18.5-1
+  libgnomeprintui2.2_0-2.18.3-1
+  libgnomeui2_0-2.24.0-1
+  libgnomevfs2_0-2.24.0-1
+  libgtk2.0_0-2.14.5-1
+  libintl8-0.17-2
+  libpango1.0_0-1.22.3-1
+  libpopt0-1.14-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.24-2
-  autoconf2.5-2.60-1
-  automake1.10-1.10-1
-  binutils-20060817-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gnome-common-2.20.0-1
-  gnome-doc-utils-0.12.0-1
-  intltool-0.36.3-1
-  libtool1.5-1.5.23a-2
+  gnome-common-2.24.0-1
+  gnome-doc-utils-0.14.0-1
+  intltool-0.40.5-1
+  libtool-2.2.6a-1
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical homepage:
@@ -47,37 +46,34 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ghex2-2.20.1-1-src.tar.bz2
+  unpack ghex2-2.22.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ghex2-2.20.1-1.cygport all
+  cygport ./ghex2-2.22.0-X.cygport all
 
 This will create:
-  /usr/src/ghex2-2.20.1-1-src.tar.bz2
-  /usr/src/ghex2-2.20.1-1.tar.bz2
+  /usr/src/ghex2-2.22.0-X-src.tar.bz2
+  /usr/src/ghex2-2.22.0-X.tar.bz2
+  /usr/src/libgtkhex-devel-2.22.0-X.tar.bz2
+  /usr/src/libgtkhex0-2.22.0-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
+Files included in the binary packages:
 
+(ghex2)
   /etc/gconf/schemas/ghex2.schemas
   /etc/postinstall/ghex2.sh
   /etc/preremove/ghex2.sh
-  /usr/bin/cyggtkhex-0.dll
   /usr/bin/ghex2.exe
-  /usr/include/gtkhex/gtkhex.h
-  /usr/include/gtkhex/hex-document.h
-  /usr/lib/libgtkhex.dll.a
-  /usr/lib/libgtkhex.la
-  /usr/lib/pkgconfig/gtkhex.pc
   /usr/share/applications/ghex.desktop
-  /usr/share/doc/ghex2-2.20.1/AUTHORS
-  /usr/share/doc/ghex2-2.20.1/COPYING
-  /usr/share/doc/ghex2-2.20.1/COPYING-DOCS
-  /usr/share/doc/ghex2-2.20.1/ChangeLog
-  /usr/share/doc/ghex2-2.20.1/INSTALL
-  /usr/share/doc/ghex2-2.20.1/README
+  /usr/share/doc/ghex2-2.22.0/AUTHORS
+  /usr/share/doc/ghex2-2.22.0/COPYING
+  /usr/share/doc/ghex2-2.22.0/COPYING-DOCS
+  /usr/share/doc/ghex2-2.22.0/ChangeLog
+  /usr/share/doc/ghex2-2.22.0/INSTALL
+  /usr/share/doc/ghex2-2.22.0/README
   /usr/share/gnome-2.0/ui/ghex-ui.xml
   /usr/share/gnome/help/ghex2/C/figures/ghex_window_empty.png
   /usr/share/gnome/help/ghex2/C/figures/ghex_window_open.png
@@ -174,9 +170,22 @@ Files included in the binary package:
   /usr/share/locale/zh_CN/LC_MESSAGES/ghex-2.0.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/ghex-2.0.mo
 
+(libgtkhex0)
+  /usr/bin/cyggtkhex-0.dll
+
+(libgtkhex-devel)
+  /usr/include/gtkhex/gtkhex.h
+  /usr/include/gtkhex/hex-document.h
+  /usr/lib/libgtkhex.dll.a
+  /usr/lib/libgtkhex.la
+  /usr/lib/pkgconfig/gtkhex.pc
+
 ------------------
 
 Port Notes:
+
+----- version 2.22.0-1 -----
+Version bump for GNOME 2.22.
 
 ----- version 2.20.1-1 -----
 Version bump for GNOME 2.20.
