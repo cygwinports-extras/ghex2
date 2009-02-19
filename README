@@ -8,17 +8,17 @@ Runtime requirements:
   libatk1.0_0-1.24.0-1
   libbonobo2_0-2.24.0-1
   libbonoboui2_0-2.24.0-1
-  libgailutil18-2.14.5-1
+  libgailutil18-2.14.7-2
   libgconf2_4-2.24.0-1
-  libglib2.0_0-2.18.3-1
+  libglib2.0_0-2.18.4-1
   libgnome2_0-2.24.1-1
   libgnomeprint2.2_0-2.18.5-1
   libgnomeprintui2.2_0-2.18.3-1
   libgnomeui2_0-2.24.0-1
   libgnomevfs2_0-2.24.0-1
-  libgtk2.0_0-2.14.5-1
+  libgtk2.0_0-2.14.7-2
   libintl8-0.17-2
-  libpango1.0_0-1.22.3-1
+  libpango1.0_0-1.22.4-1
   libpopt0-1.14-1
 
 Build requirements:
@@ -46,17 +46,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ghex2-2.22.0-X-src.tar.bz2
+  unpack ghex2-2.24.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ghex2-2.22.0-X.cygport all
+  cygport ./ghex2-2.24.0-X.cygport all
 
 This will create:
-  /usr/src/ghex2-2.22.0-X-src.tar.bz2
-  /usr/src/ghex2-2.22.0-X.tar.bz2
-  /usr/src/libgtkhex-devel-2.22.0-X.tar.bz2
-  /usr/src/libgtkhex0-2.22.0-X.tar.bz2
+  /usr/src/ghex2-2.24.0-X-src.tar.bz2
+  /usr/src/ghex2-2.24.0-X.tar.bz2
+  /usr/src/libgtkhex-devel-2.24.0-X.tar.bz2
+  /usr/src/libgtkhex0-2.24.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -68,12 +68,12 @@ Files included in the binary packages:
   /etc/preremove/ghex2.sh
   /usr/bin/ghex2.exe
   /usr/share/applications/ghex.desktop
-  /usr/share/doc/ghex2-2.22.0/AUTHORS
-  /usr/share/doc/ghex2-2.22.0/COPYING
-  /usr/share/doc/ghex2-2.22.0/COPYING-DOCS
-  /usr/share/doc/ghex2-2.22.0/ChangeLog
-  /usr/share/doc/ghex2-2.22.0/INSTALL
-  /usr/share/doc/ghex2-2.22.0/README
+  /usr/share/doc/ghex2-2.24.0/AUTHORS
+  /usr/share/doc/ghex2-2.24.0/COPYING
+  /usr/share/doc/ghex2-2.24.0/COPYING-DOCS
+  /usr/share/doc/ghex2-2.24.0/ChangeLog
+  /usr/share/doc/ghex2-2.24.0/INSTALL
+  /usr/share/doc/ghex2-2.24.0/README
   /usr/share/gnome-2.0/ui/ghex-ui.xml
   /usr/share/gnome/help/ghex2/C/figures/ghex_window_empty.png
   /usr/share/gnome/help/ghex2/C/figures/ghex_window_open.png
@@ -183,6 +183,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 2.24.0-1 -----
+Version bump for GNOME 2.24.
 
 ----- version 2.22.0-1 -----
 Version bump for GNOME 2.22.
