@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin libgtkhex0 libatk1.0-devel libgailutil-devel libglib2.0-devel libgtk2.0-devel gettext libpango1.0-devel
+requires: libgtkhex0 libatk1.0-devel libgailutil-devel libglib2.0-devel libgtk2.0-devel gettext libpango1.0-devel
 external-source: ghex2
 sdesc: "GNOME hex editor library (development)"
 ldesc: "GHex allows the user to load data from any file,
